@@ -1,31 +1,26 @@
 # Smart_Home_AVR
 For Smart Home: "AVR ATmega32 Smart Home system with LCD, Keypad, and Servo control.
-README for Smart_Home_AVR
-🏠 Smart Home Control System
-A hardware-software integrated solution for home automation and security.
 
-🚀 Overview
-Developed as the final project for the Information Technology Institute (ITI) Embedded Systems track. This project demonstrates low-level interfacing between an ATmega32 microcontroller and various peripherals to create a secure home environment.
+Project Overview
+This project is a Smart Home Control System designed for the ATmega32 microcontroller. It was developed during my 162-hour training at the Information Technology Institute (ITI). The system uses a layered architecture to manage different hardware components efficiently.
 
-✨ Features
-Secure Access: 4x4 Keypad input for password authentication.
+Features
 
-Interactive Display: 16x2 LCD provides real-time feedback (e.g., "Welcome Home," "Wrong Password").
+Security: Password-protected entry system using a 4x4 Keypad.
 
-Electromechanical Control: Servo motor integration via PWM to simulate a physical door lock.
+Display: 16x2 LCD shows system messages like "Welcome Home" or "Enter Password."
 
-Visual Status: Seven-Segment display and LED arrays to indicate system lock/unlock states.
+Actuators: Servo motor control via PWM for a locking mechanism and Stepper motor integration for automated movement.
 
-Sensor Ready: ADC initialization for future integration of light and temperature sensors.
+Feedback: Seven-Segment display and LED status indicators.
 
-🛠️ Tech Stack
-Language: Embedded C
+Sensors: ADC configuration for reading analog data from environment sensors.
 
-Architecture: AVR (ATmega32)
+File Structure
+The project follows a modular driver design:
 
-Tools: Microchip Studio / Proteus for simulation.
+MCAL (Microcontroller Abstraction Layer): DIO, ADC, and Timers drivers.
 
-Protocols: GPIO, PWM, ADC.
+HAL (Hardware Abstraction Layer): LCD, Keypad, Stepper Motor, and Servo drivers.
 
-📸 Hardware Setup
-The project utilizes the ITI AVR Kit, featuring high-speed interfacing and real-time responsiveness.
+Library: Standard types and bit math definitions.
