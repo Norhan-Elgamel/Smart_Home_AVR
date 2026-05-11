@@ -1,5 +1,5 @@
 # Smart_Home_AVR
-For Smart Home: "AVR ATmega32 Smart Home system with LCD, Keypad, and Servo control.
+For Smart Home: "AVR ATmega32 Smart Home system with LCD, Keypad, and Servo control. Written in c."
 
 Project Overview
 This project is a Smart Home Control System designed for the ATmega32 microcontroller. It was developed during my 162-hour training at the Information Technology Institute (ITI). The system uses a layered architecture to manage different hardware components efficiently.
